@@ -55,3 +55,41 @@
 .nav-item:active{
     background-color: orange;
 }
+
+
+/* =========================================== */
+
+
+/* li:first-child{
+    background-color: orange;
+}
+
+
+li:last-child{
+    background-color: lightgreen;
+} */
+
+
+/* li:nth-child(3){
+    background-color: plum;
+}
+
+li:nth-child(2n+3){
+    background-color: plum;
+} */
+
+.phone::before{
+    content: "\01F4DE";
+}
+
+/* p::first-line{
+    color: crimson;
+} */
+
+p::first-letter{
+    font-size: 40px;
+}
+
+input:focus{
+    background-color: yellow;
+}
