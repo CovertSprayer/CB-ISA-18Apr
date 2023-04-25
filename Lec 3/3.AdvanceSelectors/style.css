@@ -1,0 +1,57 @@
+/* ======================= 1. Descendent Combinator */
+/* div span{
+    background-color: aquamarine;
+} */
+
+/* ===========================2. Direct Child */
+/* ul>li{
+    color: aquamarine;
+} */
+/* ul>div{
+    color: aquamarine;
+} */
+
+/* div li{
+    color: red;
+} */
+
+
+/* =============================3. immediate siblings */
+/* li+li{
+    color: red;
+} */
+
+
+/* ============================= 4. general sibling */
+/* li~li{
+    color: orange;
+} */
+
+
+/* ================== navbar ======================= */
+
+.navbar{
+    border: 2px solid black;
+    background-color: black;
+}
+
+.nav-item:link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item{
+    margin: 0px 8px;
+}
+
+.nav-item:visited{
+    color: white;
+}
+
+.nav-item:hover{
+    text-decoration: underline;
+}
+
+.nav-item:active{
+    background-color: orange;
+}
