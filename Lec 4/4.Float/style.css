@@ -1,0 +1,39 @@
+.container{
+    border: 2px solid black;
+    /* height: 200px; */
+    width: 400px;
+    padding: 20px;
+    /* margin: 0 auto; */
+}
+
+.div{
+    width: 400px;
+    /* height: 50px; */
+    margin: 20px auto;
+    border: 2px solid black;
+}
+
+.img{
+    width: 20%;
+    float: left;
+}
+
+.div1 p#para1{
+    width: 35%;
+    float: right;
+}
+
+.div1 p#para2{
+    width: 35%;
+    float: right;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/* .div1::after{
+    content: "";
+    clear: both;
+    display: block;
+} */

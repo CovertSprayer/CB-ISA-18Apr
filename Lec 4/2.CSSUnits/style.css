@@ -1,0 +1,37 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+.outer-container{
+    border: 2px solid red;
+    width: 50vw;
+    height: 50vh;
+    /* padding: 20px; */
+}
+
+.inner-container{
+    border: 2px solid black;
+    height: 50%;
+    width: 30%;
+}
+
+/* p{
+    font-size: 20px;
+} */
+div{
+    font-size: 14px;
+}
+
+html{
+    font-size: 20px;
+}
+
+.learn-em li{
+    font-size: 2em;
+}
+
+
+.learn-rem li{
+    font-size: 2rem;
+}
