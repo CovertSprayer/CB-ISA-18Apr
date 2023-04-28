@@ -1,0 +1,41 @@
+.parent{
+    background-color: orange;
+    height: 500px;
+    width: 60vw;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    /* row, row-reverse, col */
+    /* flex-direction: column-reverse; */
+    /* justify-content:center; */
+    /* align-items: flex-start; */
+    align-content: flex-start;
+    gap: 10px;
+    /* row-gap: 50px; */
+    /* column-gap: 20px; */
+
+}
+
+.child{
+    border: 2px solid black;
+    width: 100px;
+    height: 80px;
+    background-color: palevioletred;
+    /* margin: 10px; */
+}
+
+/* .child-3{
+    padding-top: 80px;
+} */
+
+.child-1{
+    flex-grow: 1;
+}
+
+.child-2{
+    flex-grow: 3;
+}
+
+.child-3{
+    flex-grow: 1;
+}
