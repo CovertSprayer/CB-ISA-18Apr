@@ -1,0 +1,33 @@
+
+h1{
+    text-align: center;
+}
+
+.container{
+    /* border: 2px solid black; */
+    width: 70vw;
+    /* height: 70vh; */
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.card {
+    padding: 8px;
+    border: 2px solid black;
+    /* border-radius: 20px; */
+    height: 280px;
+    width: 180px;
+}
+
+.section-A img{
+    width: 100%;
+}
+
+p{
+    font-size: 12px;
+}
+

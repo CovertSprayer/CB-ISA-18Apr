@@ -1,0 +1,21 @@
+.container{
+    border: 2px solid black;
+    width: 70vw;
+    background-color: cornflowerblue;
+    display: grid;
+    /* grid-template-columns: 40px 40px 40px 40px; */
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    /* grid-template-rows: 40px 40px 40px; */
+    /* grid-template-rows: repeat(3, 40px); */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+}
+
+.el{
+    /* height: 39px;   
+    width: 39px; */
+    border: 1px solid black;
+    background-color: azure;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}

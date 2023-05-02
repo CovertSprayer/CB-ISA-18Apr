@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border-bottom: 2px solid black;
+    background-color: #FFC017;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+
+.nav-links{
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.logo img{
+    height: 2.4rem;
+}
+
+.nav-links a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:last-child{
+    border: 2px solid black;
+    border-radius: 4rem;
+    background-color: black;
+    color: white;
+    padding: 0.6rem 1.4rem;
+}
+
+.nav-links a:last-child:hover{
+    background-color: #FFC017;
+    color: black;
+}
+
