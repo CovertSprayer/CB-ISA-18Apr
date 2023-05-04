@@ -1,0 +1,37 @@
+body{
+    perspective: 800px;
+}
+
+.container{
+    height: 300px;
+    width: 200px;
+    /* background-color: paleturquoise; */
+    margin: auto;
+    border: 2px solid black;
+    position: relative;
+    transition-duration: 1.5s;
+    transform-style: preserve-3d;
+}
+
+.side-a, .side-b{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.side-a{
+    background-color: orange;
+    background: url('https://m.media-amazon.com/images/M/MV5BMjI4NDE1MjE1Nl5BMl5BanBnXkFtZTgwNzQ2MTMzOTE@._V1_FMjpg_UX1000_.jpg');
+    background-size: cover;
+}
+
+.side-b{
+    background-color: orchid;
+    transform: rotateY(180deg);
+}
+
+
+.container:hover{
+    transform: rotateY(180deg);
+}

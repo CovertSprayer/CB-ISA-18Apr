@@ -1,0 +1,17 @@
+.container{
+    width: 60%;
+    border: 2px solid black;
+}
+
+
+@media (max-width:900px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width:600px){
+    .container{
+        width: 100%;
+    }
+}
