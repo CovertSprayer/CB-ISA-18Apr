@@ -1,0 +1,13 @@
+.div1{
+    height: 500px;
+    background-color: aqua;
+}
+
+.item{
+    background-color: orange;
+    border: 2px solid black;
+}
+
+.carousal-wala-div{
+    height: 80vh;
+}
