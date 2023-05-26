@@ -1,4 +1,3 @@
-// console.log("working fine!")
 // ------------------ mouse events
 const h1 = document.querySelector('h1');
 
