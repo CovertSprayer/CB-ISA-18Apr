@@ -1,0 +1,22 @@
+*{
+    text-align: center;
+}
+
+.grand-parent{
+    border: 2px solid black;
+    width: 80vw;
+    background-color: aqua;
+    padding: 50px;
+}
+
+.parent{
+    border: 2px solid black;
+    background-color: royalblue;
+    padding: 50px;
+}
+
+.child{
+    border: 2px solid black;
+    padding: 50px;
+    background-color: gold;
+}
