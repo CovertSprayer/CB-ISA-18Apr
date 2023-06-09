@@ -55,9 +55,11 @@ async function createOutput(){
     let arr = [...arr1, ...arr2];
     arr.sort((a,b)=>a-b);
 
+    let finalArr = arr.join('\n')
+
     let finalPath = path.join(__dirname, 'data', 'output2.txt');
 
-    fs.writeFile(finalPath, arr.toString(), (err)=>{
+    fs.writeFile(finalPath, finalArr, (err)=>{
         if(err) console.log(err);
         else{
             console.log('file written successfully!!');
