@@ -1,0 +1,11 @@
+body{
+    background-color: teal;
+}
+
+h1{
+    text-align: center;
+}
+
+body>p, h1{
+    color: white;
+}
