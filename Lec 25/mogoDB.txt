@@ -1,0 +1,36 @@
+{
+    {
+        "id":1,
+        "name":"salman",
+        "text":"abcd",
+        "comment": {
+            {
+                "blog_ID": 2,
+                "comment": "nice blog"
+            },
+
+            {
+                "blog_ID": 383,
+                "comment": "Sundar blog"
+            }
+        }
+    },
+
+    {
+        "id":2,
+        "name":"shahzad",
+        "text":"xyz",
+        "comment": {
+            "Beautiful Blog"
+        }
+    },
+
+    {
+        "id":3,
+        "name":"yogesh",
+        "text":"mno",
+        "comment": {
+            "Awesome"
+        }
+    }
+}
