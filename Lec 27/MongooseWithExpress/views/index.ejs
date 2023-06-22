@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product{
+            width: 350px;
+            border: 2px solid black;
+            padding: 15px;
+            margin: 15px;
+            box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.758);
+        }
+
+        section{
+            /* border: 2px solid black; */
+            width: 80vw;
+            margin: 10px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>All Products</h1>
+    
+    <a href="/products/new">Create new Product</a>
+
+    <section>
+        <% for( let item of products ) { %>
+            <article class="product">
+                <h3><%= item.name %></h3>
+                <h4>$ <%= item.price %></h4>
+                <p><%= item.desc %></p>
+                <a href="/products/<%= item._id %>">Show</a>
+                <a href="/products/<%= item._id %>/edit">Edit</a>
+                <form action="/products/<%= item._id %>?_method=DELETE" method="POST">
+                    <button>Delete</button>
+                </form>
+            </article>
+        <% } %>
+
+        
+    </section>
+
+</body>
+</html>

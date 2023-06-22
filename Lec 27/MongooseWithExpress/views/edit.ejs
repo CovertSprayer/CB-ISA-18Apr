@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 500px;
+            padding: 10px;
+            margin: 30px auto;
+            box-shadow: 0px 4px 20px rgba(128, 128, 128, 0.758);
+
+        }
+
+        .form-control input, textarea, label{
+            display: block;
+            font-size: 1.5rem;
+            width: 90%;
+        }
+
+        button{
+            font-size: 1.2rem;
+            margin-top: 24px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Edit Details of th product</h1>
+
+    <form action="/products/<%= product.id %>?_method=PATCH" method="POST">
+        <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" value="<%= product.name %>">
+        </div>
+    
+        <div class="form-control">
+            <label for="price">Price</label>
+            <input type="number" name="price" id="price" value="<%= product.price %>">
+        </div>
+    
+        <div class="form-control">
+            <label for="desc">Description</label>
+            <textarea name="desc" id="desc" cols="30" rows="5"><%= product.desc %></textarea>
+        </div>
+    
+        <button>Save</button>
+    
+    </form>
+
+</body>
+</html>
