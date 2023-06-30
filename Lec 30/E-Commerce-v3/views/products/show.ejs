@@ -24,7 +24,7 @@
     </div>
     <div class="col-lg-4 col-sm-12 mx-auto">
       <h2 class="text-center display-6">Leave Your Review</h2>
-      <form class="mb-4" action="/products/<%= product._id %>/review" method="post">
+      <form class="mb-4 needs-validation" action="/products/<%= product._id %>/review" method="post" novalidate>
         <div class="mb-2">
           <fieldset class="starability-basic">
             <legend>Rating:</legend>
@@ -47,7 +47,7 @@
 
         <div class="mb-2">
           <label for="comment">Description</label>
-          <textarea class="form-control" name="comment" id="comment" cols="30" rows="3"></textarea>
+          <textarea class="form-control" name="comment" id="comment" cols="30" rows="3" required></textarea>
         </div>
 
         <button class="btn btn-sm btn-success">Submit</button>
