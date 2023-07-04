@@ -1,0 +1,32 @@
+<% layout('layouts/boilerplate') -%>
+
+    <div class="row newForm">
+        <div class="col-6 mx-auto">
+            <form class="needs-validation" action="/products" method="POST" novalidate>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+                        placeholder="Product Name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="img" class="form-label">Image</label>
+                    <input type="text" class="form-control" id="img" placeholder="Image URL" name="img" required>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Price</label>
+                    <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input type="number" class="form-control" id="price" placeholder="Product Price" name="price"
+                            required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="desc" class="form-label">Description</label>
+                    <textarea class="form-control" name="desc" id="desc" cols="30" rows="5"
+                        placeholder="Product Description" required></textarea>
+
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+            </form>
+        </div>
+    </div>
