@@ -29,6 +29,9 @@ router.post('/products', validateProduct, async (req, res) => {
 
     try {
         await Product.create(req.body);
+
+        req.flash('success', 'Added your product successfully!');
+
         res.redirect('/products');
     }
 
@@ -71,6 +74,8 @@ router.patch('/products/:id', async (req, res) => {
     try {
         const { id } = req.params;
 
+        req.flash('success', 'Edited your product successfully!');
+
         await Product.findByIdAndUpdate(id, req.body);
         res.redirect(`/products/${id}`);
     }
@@ -92,6 +97,9 @@ router.delete('/products/:id', async (req, res) => {
         // }
 
         await Product.findByIdAndDelete(id);
+
+        req.flash('success', 'Deleted your product successfully!');
+
         res.redirect(`/products`);
     }
 
