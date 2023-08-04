@@ -1,0 +1,18 @@
+<% layout('layouts/boilerplate') -%>
+
+    <section class="d-flex flex-wrap gap-5 justify-content-center">
+        <% for( let item of products) { %>
+            <div class="card" style="width: 18rem;">
+                <img src="<%= item.img %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= item.name %></h5>
+                  <h5>$ <%= item.price %></h5>
+                  <p class="card-text"><%= item.desc %></p>
+                  <a href="/products/<%= item._id %>" class="btn btn-primary btn-sm">Buy Now</a>
+                </div>
+            </div>
+        <% } %>
+    </section>
+
+
+    

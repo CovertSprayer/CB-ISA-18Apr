@@ -6,8 +6,9 @@ module.exports.validateProduct = (req, res, next) => {
     const { error } = productSchema.validate({ name, img, price, desc });
 
     if (error) {
-        const msg = error.details.map((err) => err.message).join(',');
-        return res.render('error', { err: msg });
+        // const msg = error.details.map((err) => err.message).join(',');
+        // return res.render('error', { err: msg });
+        res.send('Error', error)
     }
     next();
 }
@@ -17,8 +18,9 @@ module.exports.validateReview = (req, res, next) => {
     const { error } = reviewSchema.validate({ rating, comment });
 
     if (error) {
-        const msg = error.details.map((err) => err.message).join(',');
-        return res.render('error', { err: msg });
+        // const msg = error.details.map((err) => err.message).join(',');
+        // return res.render('error', { err: msg });
+        res.send('error', error);
     }
     next();
 }
