@@ -1,0 +1,26 @@
+.quote-card{
+    /* border: 2px solid black; */
+    width: 600px;
+    min-height: 250px;
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+    background-color: #eed2cc;
+    border-radius: 10px;
+}
+
+.quote-card img{
+    border-radius: 10px;
+    width: 30%;
+}
+
+.quote-card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quote-card-body p h2{
+    font-size: 3rem;
+    margin-bottom: -25px;
+}

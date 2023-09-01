@@ -1,0 +1,17 @@
+.form-div{
+    border: 2px solid black;
+    width: 60vw;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+.form-div form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-div form div{
+    display: flex;
+    flex-direction: column;
+}
