@@ -1,0 +1,36 @@
+.form-div{
+    border: 2px solid black;
+    width: 60vw;
+    margin: 25px auto;
+    padding: 20px;
+    box-shadow: 15px 15px 20px #eed2cc;
+}
+
+.form-div form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-div form div{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 1.4rem;
+}
+
+input, textarea{
+    font-size: 1rem;
+    padding: 8px;
+    font-family: poppins;
+}
+
+button{
+    padding: 8px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
